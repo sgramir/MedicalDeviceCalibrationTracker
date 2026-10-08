@@ -1,5 +1,3 @@
-</> C#
-
 using System;
 
 namespace MedicalDeviceCalibrationTracker
@@ -28,7 +26,11 @@ namespace MedicalDeviceCalibrationTracker
     {
       if (NextCalibrationDate < DateTime.Today)
       {
-        Console.WriteLine("Calibration Status: Current");
+        Console.WriteLine("Calibration Status: Overdue");
+      }
+      else
+      {
+         Console.WriteLine("Calibration Status: Current");
       }
     }
     static void Main(string[] args)
